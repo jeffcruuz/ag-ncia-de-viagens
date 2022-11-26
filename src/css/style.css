@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(245, 239, 233);
+}
+header  , .divisao-principal-formulario {
+    background-color: white;    
+}
+input , select {
+    border: 1px solid black;
+    width: 100%;
+    padding:5px;
+}
+label{
+    display: inline;
+    padding:2px 0;
+}
+.tamanho-max {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.textoo-negrito {
+    font-weight: bold;
+}
+.texto-branco {
+    color: white;
+}
+.subtitulo {
+    text-align:justify;
+    padding: 40px 0 20px 0;
+    line-height:1.5;
+}
+/* HEADER , TOPO DO SITE */
+
+.divisao-topo {
+    display: flex;
+    align-items: center;
+    padding:10px 10px;
+    font-size: 16px;
+}
+.divisao-topo img {
+    width: 25px;
+}
+
+/*FINAL DO TOPO DO SITE*/
+/*INICIO MAIN - PARTE PRINCIPAL DO SITE , SECAO-FORMULARIO*/
+
+button {
+    margin:5px 0 20px 0;
+    padding: 7px;
+    text-align: center;
+    background-color: blueviolet;
+}
+.secao-formulario{
+    padding:30px 10px;
+    background-image: url(../assets/bahia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.formulario-cabecalho {
+    padding: 5px 0;
+    text-align: center;
+    background-color: blueviolet;
+}
+.formulario-cabecalho img {
+    width:20px;
+}
+.formulario-cabecalho h1 {
+    display:inline-block;
+    padding-left:10px;
+}
+.divisao-dados{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0px 20px;
+}
+.divisao-dados h2 {
+    padding:20px 0;
+}
+.formulario-duplo {
+    display: flex;
+    gap: 20px;
+}
+.formulario-duplo label {
+    margin: 5px 0;
+}
+.formulario-duplo div {
+    width: 100%;
+}
+.radio {
+    display:flex;
+    gap:10px;
+}
+.radio div {
+    display:flex;
+    align-items: center;
+}
+.radio label {
+    width:80px;
+}
+/*FINAL DA SECAO FORMULARIO*/
+/*INICIO DA SECAO OFERTAS */
+
+.secao-ofertas {
+    padding: 0 10px;
+}
+.galeria-oferta-principal {
+    display:flex;
+    width:100%;
+    gap:10px;
+}
+.galeria-ofertas {
+    display:flex;
+    flex-flow:row wrap;
+    gap: 10px;
+    width:50%;
+}
+.galeria-oferta-unica img{
+    width: 100%;
+}
+.galeria-ofertas-dupla{
+    display:flex;
+    flex-flow:row wrap;
+    gap:10px;
+    width: 100%;
+}
+.galeria-ofertas-demais{
+    display: flex;
+    flex-flow:row wrap;
+    width:calc(50% - 5px);
+}
+.galeria-ofertas-demais img{ 
+    width: 100%;
+    height:85%;
+}
+.galeria-ofertas-descricao {
+    width: 100%;
+    padding:3px;
+    background-color: rgba(0, 0, 0, 0.768);
+    color: white;
+}
+
+/*FINAL SEÇÃO OFERTAS*/
+
+/*SEÇÃO PROMOÇÕES*/
+
+.secao-promocoes {
+    padding: 0 10px;
+}
+.divisao-promocao {
+    display:flex;
+    width: 100%;
+    gap:10px;
+}
+.galeria-promocao {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+.img-promocao img{
+    width:100%
+}
+.galeria-promocao-descricao {
+    width: 100%;
+    padding:10px 10px;
+    line-height: 1.5;
+    background-color: aliceblue;
+}
+
+
+/* FINAL DA SECAO PROMOCÕES*/
+
+
+/*INICIO DO RODAPÉ */
+footer {
+    margin: 30px 0;
+    padding: 20px 0;
+    background-color: blueviolet;
+    line-height: 2.5;
+}
+.secao-rodape {
+    display: flex;
+    justify-content:space-around;
+    padding: 0 10px;
+}
+.divisao-rodape {
+    display:flex;
+    flex-direction:column;
+}
+.divisao-rodape h3 {
+    margin:20px 0;
+}
+.divisao-rodape img {
+    width: 20px;
+}
+/*FINAL DO RODAPÉ*/
+
+/*MEDIA QUERY*/
+
+@media (max-width:768px) {
+    .galeria-oferta-principal ,.galeria-ofertas,.galeria-oferta-unica .galeria-ofertas-dupla{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .radio{
+        flex-direction: column;
+        align-items:flex-start;
+        width:100%
+    }
+    .radio div input {
+        width:20%;
+    }
+}
+@media (max-width:426px){
+    .body {
+        flex-direction:column;
+    }
+    .secao-rodape{
+        flex-flow: column;
+        padding-left: 20px;
+        line-height: normal;
+
+    }
+}
